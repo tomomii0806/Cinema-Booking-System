@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="513.0" prefWidth="981.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TrailerController">
+   <children>
+   
+   		<Button fx:id="infinityTitle" layoutX="52.0" layoutY="220.0" mnemonicParsing="false" onAction="#popup1" onMouseEntered="#handleBtn1" onMouseExited="#handleBtn1Exit" style="-fx-background-color: black;" text="Avengers: Infinity War" textFill="#fcfafa" />
+      <Button fx:id="pikachuTitle" layoutX="260.0" layoutY="220.0" mnemonicParsing="false" onAction="#popup2" onMouseEntered="#handleBtn2" onMouseExited="#handleBtn2Exit" style="-fx-background-color: black;" text="Detective Pikachu" textFill="#fcfafa" />
+      <Button fx:id="interstellerTitle" layoutX="478.0" layoutY="220.0" mnemonicParsing="false" onAction="#popup3" onMouseEntered="#handleBtn3" onMouseExited="#handleBtn3Exit" style="-fx-background-color: black;" text="Interstellar" textFill="#fcfafa" />
+      <Button fx:id="endgameTitle" layoutX="61.0" layoutY="445.0" mnemonicParsing="false" onAction="#popup4" onMouseEntered="#handleBtn4" onMouseExited="#handleBtn4Exit" style="-fx-background-color: black;" text="Avengers: End Game" textFill="#fcfafa" />
+      <Button fx:id="alitaTitle" layoutX="260.0" layoutY="445.0" mnemonicParsing="false" onAction="#popup5" onMouseEntered="#handleBtn5" onMouseExited="#handleBtn5Exit" style="-fx-background-color: black;" text="Alita: Buttle Angel" textFill="#fcfafa" />
+      <Button fx:id="poohTitle" layoutX="454.0" layoutY="445.0" mnemonicParsing="false" onAction="#popup6" onMouseEntered="#handleBtn6" onMouseExited="#handleBtn6Exit" style="-fx-background-color: black;" text="Christopher Robin" textFill="#fcfafa" />
+    
+    
+      <Button fx:id="infinityWar" layoutX="45.0" layoutY="49.0" mnemonicParsing="false" onAction="#playTrailer" onDragDetected="#playTrailer" onDragDone="#playTrailer" onMouseEntered="#enter1" onMouseExited="#exit1" prefHeight="168.0" prefWidth="161.0" style="-fx-background-color: black;">
+         <graphic>
+      	<ImageView fitHeight="146.0" fitWidth="106.0" onMouseEntered="#handleBtn1">
+      	<image>
+      		<Image url="@../image/infinityWar(img).jpg" />           
+      	</image>
+      	</ImageView>
+         </graphic>
+      	</Button>    
+      <Button fx:id="detectivePikachu" layoutX="259.0" layoutY="53.0" mnemonicParsing="false" onAction="#playTrailer2" onMouseEntered="#enter2" onMouseExited="#exit2" prefHeight="160.0" prefWidth="112.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pikachu(new).jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="intersteller" layoutX="454.0" layoutY="53.0" mnemonicParsing="false" onAction="#playTrailer3" onMouseEntered="#enter3" onMouseExited="#exit3" prefHeight="145.0" prefWidth="102.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/intersteller.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="endGame" layoutX="69.0" layoutY="275.0" mnemonicParsing="false" onAction="#playTrailer4" onMouseEntered="#enter4" onMouseExited="#exit4" prefHeight="145.0" prefWidth="102.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/endgame.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="alita" layoutX="259.0" layoutY="275.0" mnemonicParsing="false" onAction="#playTrailer5" onMouseEntered="#enter5" onMouseExited="#exit5" prefHeight="145.0" prefWidth="102.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/alita.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="pooh" layoutX="454.0" layoutY="275.0" mnemonicParsing="false" onAction="#playTrailer6" onMouseEntered="#enter6" onMouseExited="#exit6" prefHeight="145.0" prefWidth="102.0" style="-fx-background-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pooh.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+     
+      <ChoiceBox fx:id="choiceMovie" layoutX="718.0" layoutY="58.0" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: Black;" />
+      <Label layoutX="617.0" layoutY="62.0" prefHeight="17.0" prefWidth="102.0" text="Select a movie" textAlignment="CENTER" textFill="#d0caca">
+         
+      </Label>
+      <Button fx:id="purchase" layoutX="798.0" layoutY="313.0" mnemonicParsing="false" onAction="#purchace" prefHeight="49.0" prefWidth="80.0" style="-fx-background-color: white;" text="Purchase" textFill="#070707" />
+      <ChoiceBox fx:id="choiceTime" layoutX="717.0" layoutY="113.0" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: Black;" />
+      <Label layoutX="640.0" layoutY="118.0" prefHeight="17.0" prefWidth="76.0" text="Start Time" textAlignment="CENTER" textFill="#e1dbdb">
+         
+      </Label>
+      <TextField fx:id="choiceTicket" layoutX="720.0" layoutY="175.0" promptText="Number of Ticket" />
+   </children>
+</AnchorPane>

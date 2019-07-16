@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="loginBtn" layoutX="180.0" layoutY="237.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: white;" text="Login" />
+      <Button fx:id="signinBtn" layoutX="67.0" layoutY="237.0" mnemonicParsing="false" onAction="#Signin" style="-fx-background-color: white;" text="Signin" />
+      <TextField fx:id="txtUsername" layoutX="67.0" layoutY="94.0" prefHeight="27.0" prefWidth="167.0" promptText="Username" style="-fx-background-color: white;" />
+      <Label fx:id="idStatus" alignment="TOP_LEFT" layoutX="47.0" layoutY="42.0" prefHeight="17.0" prefWidth="129.0" text="Status" textFill="#e40808" />
+      <PasswordField fx:id="txtPassword" layoutX="67.0" layoutY="150.0" prefHeight="27.0" prefWidth="167.0" promptText="Password" />
+   </children>
+</AnchorPane>
